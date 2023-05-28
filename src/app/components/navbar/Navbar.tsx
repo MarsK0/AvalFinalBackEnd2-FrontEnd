@@ -56,7 +56,7 @@ const Navbar: React.FC<Props> = ({ setFilter, setIsMessageModalOpen, archived, s
   const navigate = useNavigate()
 
   async function handleLogout(){
-    const response = await axios.get(`${process.env.REACT_APP_BASEURL}/logout`,{
+    const response = await axios.post(`${process.env.REACT_APP_BASEURL}/logout`,{
       withCredentials: true
     })
 

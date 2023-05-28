@@ -10,7 +10,7 @@ const MessageModal: React.FC<Props> = ({ isMessageModalOpen, setIsMessageModalOp
   const [description, setDescription] = useState<string>("")
 
   useEffect(()=>{
-    setDate(messageUnderEdition?messageUnderEdition.date:"")
+    setDate(messageUnderEdition?messageUnderEdition.date_message:"")
     setTitle(messageUnderEdition?messageUnderEdition.title:"")
     setDescription(messageUnderEdition?messageUnderEdition.description:"")
   },[messageUnderEdition])

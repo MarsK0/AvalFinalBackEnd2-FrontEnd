@@ -93,7 +93,7 @@ const MessageCard: React.FC<Props> = ({ message, messageUnderEdition, setMessage
         flexDirection: "column",
         gap: "15px"
       }}>
-        <TimePicker date={message.date}/> 
+        <TimePicker date={message.date_message}/> 
         <Typography variant="h4" component="div">
           {message.title}
         </Typography>

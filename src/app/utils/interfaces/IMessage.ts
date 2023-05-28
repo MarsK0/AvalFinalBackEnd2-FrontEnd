@@ -2,7 +2,7 @@ interface IMessage{
   id: string,
   archived: boolean,
   userId: string,
-  date: string,
+  date_message: string,
   title: string,
   description: string,
 }
